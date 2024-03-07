@@ -1,0 +1,160 @@
+<div class="accueil">
+    <app-header></app-header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="assets/logo/image.jpg" alt="Image 1" class="hero-image">
+        <div class="hero-content">
+            <h1>Éduquer pour un Avenir Meilleur</h1>
+            <p>Nous bâtissons des ponts vers le savoir pour tous.</p>
+            <button>En savoir plus</button>
+        </div>
+    </section>
+
+   <!-- Nos Valeurs Section -->
+<section class="nos-valeurs-section">
+    <div class="section-header">
+        <h2>Nos Valeurs Fondamentales</h2>
+        <p>Les piliers de notre engagement envers l'éducation au Tchad</p>
+    </div>
+    <div class="valeurs-grid">
+        <div class="valeur">
+            <h3>Équité</h3>
+            <p>Chaque enfant mérite des chances égales. Nous œuvrons pour éliminer les barrières à l'éducation, assurant un accès juste et équitable pour tous.</p>
+        </div>
+        <div class="valeur">
+            <h3>Solidarité</h3>
+            <p>Notre force réside dans notre unité. Nous collaborons étroitement avec les communautés pour apporter des solutions durables et bienveillantes.</p>
+        </div>
+        <div class="valeur">
+            <h3>Transparence</h3>
+            <p>La confiance est la clé. Nous agissons avec honnêteté et ouverture, garantissant une gestion responsable et transparente des ressources.</p>
+        </div>
+    </div>
+</section>
+
+<section class="qui-sommes-nous-section">
+    <div class="container">
+        <div class="left-column">
+            <img src="assets/logo/image.jpg" alt="Notre Équipe">
+        </div>
+        <div class="right-column">
+            <div class="text-content">
+                <h2>Qui Sommes-Nous</h2>
+                <p>Nous sommes une équipe passionnée, dédiée à l'éducation pour tous au Tchad. Notre mission est de fournir un soutien éducatif et économique aux enfants les plus défavorisés, en promouvant l'équité, la solidarité et la transparence.</p>
+                <div *ngIf="isMoreTextVisible">
+                    <p>Nos initiatives incluent la construction d'écoles, la formation d'enseignants et la distribution de matériel éducatif. En travaillant main dans la main avec les communautés locales, nous visons à créer un impact durable et à garantir un avenir meilleur pour chaque enfant au Tchad.</p>
+                </div>
+                <button (click)="toggleText()">
+                    {{ isMoreTextVisible ? 'Voir moins' : 'En savoir plus' }}
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Galerie ou Médiathèque Section -->
+<section class="galerie-section">
+    <h2>Galerie</h2>
+    <div class="galerie-grid">
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 1">
+        </div>
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 2">
+        </div>
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 3">
+        </div>
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 4">
+        </div>
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 5">
+        </div>
+        <div class="galerie-item">
+            <img src="assets/logo/image.jpg" alt="Description de l'image 6">
+        </div>
+
+
+        <!-- Ajoutez plus d'images ou de vidéos selon vos besoins -->
+    </div>
+</section>
+
+<!-- Comment Aider Section -->
+<section class="comment-aider-section">
+    <h2>Comment Aider</h2>
+    <p>Rejoignez-nous dans notre mission pour l'éducation au Tchad. Voici comment vous pouvez contribuer :</p>
+    
+    <div class="facons-aider">
+        <div class="facon-aider">
+            <h3>Faire un Don</h3>
+            <p>Votre soutien financier nous aide à fournir des ressources éducatives essentielles aux enfants dans le besoin.</p>
+            <button>Faire un Don</button>
+        </div>
+        <div class="facon-aider">
+            <h3>Devenir Bénévole</h3>
+            <p>Participez à nos projets sur le terrain ou aidez-nous depuis chez vous. Toute aide est précieuse.</p>
+            <button>Devenir Bénévole</button>
+        </div>
+        <div class="facon-aider">
+            <h3>Partenariat et Collaboration</h3>
+            <p>Si vous représentez une entreprise ou une organisation, découvrez comment vous pouvez vous associer à nous.</p>
+            <button>En savoir plus</button>
+        </div>
+    </div>
+</section>
+
+<!-- Témoignages Section -->
+<section class="temoignages-section">
+    <h2>Témoignages</h2>
+    <div class="carousel">
+        <!-- Témoignage 1 -->
+        <div class="temoignage">
+            <img src="assets/logo/image.jpg" alt="Avatar
+
+de la Personne" class="avatar">
+<div class="temoignage-content">
+<p class="citation">« Grâce à l'initiative d'éducation de l'association, mon enfant a pu accéder à de meilleures opportunités d'apprentissage. »</p>
+<h3>Nom de la Personne</h3>
+<p class="role">Rôle ou Relation</p>
+</div>
+</div>
+<!-- Témoignage 2 -->
+<div class="temoignage">
+<img src="assets/logo/image.jpg" alt="Avatar d'une Autre Personne" class="avatar">
+<div class="temoignage-content">
+<p class="citation">« En tant que bénévole, j'ai vu l'impact positif direct de notre travail sur la communauté. »</p>
+<h3>Autre Personne</h3>
+<p class="role">Rôle ou Relation</p>
+</div>
+</div>
+
+<!-- Témoignage 3 -->
+<div class="temoignage">
+<img src="assets/logo/image.jpg" alt="Avatar d'une Autre Personne" class="avatar">
+<div class="temoignage-content">
+<p class="citation">« En tant que bénévole, j'ai vu l'impact positif direct de notre travail sur la communauté. »</p>
+<h3>Autre Personne</h3>
+<p class="role">Rôle ou Relation</p>
+
+</div>
+</div>
+
+<!-- Témoignage 4 -->
+<div class="temoignage">
+<img src="assets/logo/image.jpg" alt="Avatar d'une Autre Personne" class="avatar">
+<div class="temoignage-content">
+<p class="citation">« En tant que bénévole, j'ai vu l'impact positif direct de notre travail sur la communauté. »</p>
+<h3>Autre Personne</h3>
+<p class="role">Rôle ou Relation</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<app-footer></app-footer>
+
+</div>

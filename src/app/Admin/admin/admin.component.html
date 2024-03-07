@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="login-container">
+  <div class="login-card">
+    <h1>Connexion</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="login-form">
+      <mat-form-field appearance="fill" class="login-input">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Entrez votre email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="login-input">
+        <mat-label>Mot de passe</mat-label>
+        <input matInput type="password" placeholder="Entrez votre mot de passe" formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" class="login-button">Se connecter</button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

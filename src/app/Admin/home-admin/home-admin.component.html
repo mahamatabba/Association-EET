@@ -1,0 +1,37 @@
+<div class = "page-container">
+<div class="cards-container">
+    <div class="nft-card large-card">
+        <div *ngIf="lastMessageDetails" class="card-content">
+            <h2>{{ lastMessageDetails.subjects }}</h2>
+            <p>Email de l'expéditeur : {{ lastMessageDetails.expediteur }}</p>
+            <p>Description : {{ lastMessageDetails.description }}</p>
+            <p>Date d'envoi : {{ lastMessageDetails.createdAt | date:'medium' }}</p>
+            <div class="buttons">
+                <button class="explore-btn" (click)="navigateToGetAllMembers()">Voir Tous Les Messages</button>
+              </div>
+          </div>
+                  
+    </div>
+    <div class="nft-card small-card">
+        <div class="nft-image">
+            <div class="user-info">
+                <div class="user-name"></div>
+                <div class="nft-title"></div>
+            </div>
+          </div>
+    
+      <div class="nft-info">
+        
+        <div class="nft-auction">
+           <h3> En ce date  <span class="highlight-date">{{ today | date:'fullDate' }}</span>, l'Association "Ensemble pour l'éducation" rayonne avec <span class="highlight">{{ numberMembers }}</span> membres passionnés et engagés. </h3>        
+            <div class="current-bid">
+          </div>
+        </div>
+        <div class="nft-bid">
+          <button class="btn-details" (click)="navigateToGetAllMembers()">Administrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,77 @@
+.members-page-container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--primary-color);
+    min-height: 100vh;
+    
+  
+    .actions-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: white; 
+      }
+  
+      .search-field {
+        width: 100%;
+        max-width: 300px;
+        
+        mat-icon {
+          color: white; 
+        }
+      
+        .mat-form-field-outline {
+          color: white; 
+        }
+      
+        .mat-form-field-outline-thick {
+          color: white; 
+        }
+      
+        .mat-form-field-label {
+          color: white; 
+        }
+      
+        input::placeholder { 
+          color: white;
+          opacity: 1;
+        }
+      
+        input {
+          color: white; 
+        }
+      }
+      
+      
+    
+  
+      .add-button {
+        margin-left: 20px;
+      }
+      
+    }
+  
+    .table-container {
+      overflow: auto;
+      .members-table {
+        width: 100%;
+  
+        th.mat-header-cell {
+          color: #6a1b9a; 
+        }
+  
+        td.mat-cell {
+          color: #333; 
+        }
+  
+        button mat-icon {
+          color: #6a1b9a; 
+        }
+      }
+    }
+  }
+  

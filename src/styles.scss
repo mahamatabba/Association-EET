@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toast-success {
+    background-color: #51A351; 
+  }
+  
+  .toast-error {
+    background-color: #BD362F; 
+  }
+
+  :root { 
+    --primary-color: #131129;
+    --background-table-color: #252038;
+    --button-color: #6F4FF2;
+    --background-cards-color: #1D1932;
+    --text-color: #FFFFFF; 
+    --subtitle-color: #6C7AA0;
+    --buton-delete: #DC3546;
+}
+  

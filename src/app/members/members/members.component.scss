@@ -1,0 +1,61 @@
+.inscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; // Ajusté pour le contenu de l'inscription
+    padding: 20px 0; // Espacement pour ne pas coller au header/footer
+    background-color: #eceff1;
+}
+
+.inscription-card {
+    padding: 40px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150%; // Ajusté pour le contenu de l'inscription
+    max-width: 600px;
+
+    h1 {
+      color: #424242;
+      margin-bottom: 20px;
+      text-align: center; // Assure que le titre est bien centré
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .form-input {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .mat-form-field-underline {
+          background-color: transparent;
+        }
+
+        .mat-form-field-ripple {
+          background-color: #1976d2;
+        }
+
+        input.mat-input-element, .mat-select {
+          padding: 8px 0;
+
+          &:focus {
+            border-bottom: 2px solid #1976d2;
+          }
+        }
+    }
+
+    .inscription-button {
+      margin-top: 30px;
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+}

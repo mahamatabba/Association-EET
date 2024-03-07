@@ -1,0 +1,391 @@
+html {
+    scroll-behavior: smooth;
+}
+
+app-header {
+    margin-bottom: 0;
+}
+.accueil {
+    font-family: 'Arial', sans-serif;
+
+    .hero-section {
+        position: relative;
+        overflow: hidden;
+
+        .hero-image {
+            flex: 0 0 100%;
+            width: 100%;
+            height: auto;
+        }
+    
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 2; 
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1.2rem;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #367c39;
+                }
+            }
+        }
+    }
+
+    .about-section, .programs-section, .testimonials-section, .join-section {
+        padding: 60px 20px;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        p, img {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+.nos-valeurs-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 68vh;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.3em;
+}
+
+.valeurs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.valeur {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valeur h3 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    }
+    
+    .valeur p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+    }
+    
+    .valeur:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    @media screen and (max-width: 768px) {
+    .valeurs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    }
+    }
+
+    .qui-sommes-nous-section {
+        background-color: #fff;
+        padding: 50px 0;
+        min-height: 50vh;
+
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .left-column {
+        flex: 1;
+    }
+    
+    .left-column img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .right-column {
+        flex: 1;
+    }
+    
+    .text-content {
+        text-align: left;
+    }
+    
+    .text-content h2 {
+        color: #333;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .text-content p {
+        color: #555;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    
+    .text-content button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .text-content button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .left-column, .right-column {
+            flex: none;
+            width: 100%;
+        }
+    
+        .text-content {
+            text-align: center;
+        }
+    }
+
+    .galerie-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .galerie-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    
+    .galerie-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 20px;
+    }
+    
+    .galerie-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .galerie-item:hover img {
+        transform
+
+        : scale(1.05);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+.galerie-grid {
+grid-template-columns: 1fr;
+}
+}
+
+.comment-aider-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.comment-aider-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.comment-aider-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.facons-aider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.facon-aider {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facon-aider h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.facon-aider p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.facon-aider button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+
+}
+
+.facon-aider button:hover {
+background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {      
+.facons-aider {
+grid-template-columns: 1fr;
+}
+}
+
+.temoignages-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.temoignages-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.temoignage {
+    background: white;
+    margin: 0 15px;
+    flex: none;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.temoignage-content {
+    text-align: left;
+}
+
+.citation {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height:1.6;
+    color: #555;
+    }
+    
+    .temoignage h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+    }
+    
+    .role {
+    font-size: 1em;
+    color: #666;
+    }
+    
+    /* Style pour rendre la section plus dynamique */
+    .carousel::-webkit-scrollbar {
+    display: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .carousel {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    css
+    
+    .temoignage {
+        margin: 15px 0;
+        width: auto;
+    }
+    
+    }
+
+
+
+
+    
+
+
+
+    
