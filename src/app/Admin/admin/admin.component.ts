@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/Services/auth.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class AdminComponent {
 
   constructor(
     private fb: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -28,7 +30,7 @@ export class AdminComponent {
       const { email, password } = this.loginForm.value;
       this.authService.login({ email, password }).subscribe({
         next: (response) => {
-         
+          this.router.navigate(['admin/admin']);
          
         },
         error: (error) => {

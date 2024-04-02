@@ -3,13 +3,6 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.toast-success {
-    background-color: #51A351; 
-  }
-  
-  .toast-error {
-    background-color: #BD362F; 
-  }
 
   :root { 
     --primary-color: #131129;
@@ -21,3 +14,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --buton-delete: #DC3546;
 }
   
+.main-content {
+  margin-left: 64px;
+  height: 100vh;
+  background-color: var(--primary-color);
+}

@@ -23,6 +23,12 @@ import { ShowMembresComponent } from './members/show-membres/show-membres.compon
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { LayoutComponent } from './Admin/layout/layout.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +38,8 @@ import { MatButtonModule } from '@angular/material/button';
     AdminComponent,
     MembersComponent,
     HomeAdminComponent,
-    ShowMembresComponent
+    ShowMembresComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -50,10 +57,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatTableModule,
     MatIconModule,
     MatButtonModule,
-    ToastrModule.forRoot({
-      positionClass: 'toast-top-right', 
-      preventDuplicates: true,
-    }),
+    MatSidenavModule,
+    MatListModule,
+    ToastrModule.forRoot()
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  Router } from '@angular/router';
 import { MemebersService } from 'src/app/Services/memebers.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class HomeAdminComponent {
   today = new Date();
 
 
-  constructor(private membersService: MemebersService) {}
+  constructor(private membersService: MemebersService, private router: Router) {}
 
   ngOnInit() {
     this.getNumberMembers();
@@ -48,7 +49,8 @@ export class HomeAdminComponent {
 
 
   navigateToGetAllMembers() {  
-    console.log('Navigating to user page...');
+    this.router.navigate(['admin/show_membre']);
   }
+
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
 import { IMembers } from 'src/app/Interface/IMembers';
 import { MemebersService } from 'src/app/Services/memebers.service';
 
@@ -12,7 +13,7 @@ export class ShowMembresComponent implements OnInit {
   displayedColumns: string[] = ['firstName', 'lastName', 'phone', 'country', 'date', 'createdAt'];
   dataSource = new MatTableDataSource<IMembers>();
 
-  constructor(private membersService: MemebersService) {}
+  constructor(private membersService: MemebersService,private router: Router) {}
 
   ngOnInit() {
     this.membersService.getAllMembers().subscribe(members => {
@@ -43,6 +44,8 @@ export class ShowMembresComponent implements OnInit {
 
   addMember() {
     console.log('Add member');
+    //this.router.navigate(['/adherez'])
+    this.router.navigate(['/adherez']);
   }
 
 

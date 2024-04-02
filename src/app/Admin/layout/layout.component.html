@@ -1,0 +1,33 @@
+<div class="layout">
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="icons">
+      <a href="admin/admin">
+      <img src="assets/icon/eet.svg" alt="SecuryCloud" class="logo">
+      </a>
+      <a href="admin/show_membre">
+        <img src= "assets/icon/membres.png" alt="membres">
+      </a>
+      <a href="app/users">
+        <img src= "assets/icon/admin.png" alt="admin">
+      </a>
+      <a href="app/applications">
+        <img src= "assets/icon/galerie.png" alt="galerie">
+      </a>
+      <a href="app/settings">
+        <img src= "assets/icon/message.png" alt="message">
+      </a>
+    </div>
+    <div class="user">
+      <button class="btn-user-profile" (click)="openModal()">
+      </button>
+    </div>
+  </nav>
+
+
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  
+</div>
