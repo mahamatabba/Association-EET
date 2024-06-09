@@ -14,14 +14,14 @@ const routes: Routes = [
   {path: 'adherez' , component: MembersComponent},
   
 
-  {path: 'admin', 
-  component: LayoutComponent,
-  children: [
-    {path: 'show_membre', component: ShowMembresComponent},
-    {path: 'admin', component: HomeAdminComponent}
+    {path: 'admin', 
+    component: LayoutComponent,
+    children: [
+      {path: 'show_membre', component: ShowMembresComponent},
+      {path: 'admin', component: HomeAdminComponent}
 
-    
-  ]},
+      
+    ]},
  
 ];
 
