@@ -14,7 +14,7 @@ steps:
     npm install -g @angular/cli
     npm install
     npm audit fix
-    ng build --prod
+    ng build --configuration=production
   displayName: 'Install Angular CLI, npm install, fix vulnerabilities, and build Angular app'
 
 - task: PublishBuildArtifacts@1
