@@ -7,7 +7,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '14.x'
+    versionSpec: '18.x'
   displayName: 'Install Node.js'
 
 - script: |
@@ -19,7 +19,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'dist/my-app-name'
+    PathtoPublish: 'dist/eet'
     ArtifactName: 'dist'
-    publishLocation: 'Container'
+    publishPostLocation: 'Container'
   displayName: 'Publish Build Artifacts'
